@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-dark: #0f172a;
+  --color-accent: #3b82f6;
+  --font-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --text-light: #64748b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-jakarta text-dark bg-slate-50 leading-relaxed;
+  }
+}
+
+/* Sidebar Layout Helpers */
+@media (min-width: 768px) {
+  /* This relies on the App.tsx structure and Sidebar transitions.
+     We'll handle the content offset directly in the components for better control. */
+}
