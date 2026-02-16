@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# NexGen Solutions | Enterprise Digital Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NexGen Solutions is a premium, high-performance digital agency platform built with modern engineering practices. This project showcases a "Carbon & Gold" aesthetic, utilizing state-of-the-art web technologies to deliver a sophisticated user experience.
 
-Currently, two official plugins are available:
+## 🚀 Vision
+Architecting the next generation of digital excellence, from enterprise ERP systems to high-performance gaming engines.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **Carbon & Gold Theme**: A premium, high-contrast dark mode design system.
+- **Glassmorphism**: Modern UI components with sophisticated backdrop-blur effects.
+- **Dedicated Consultation Page**: A full-page experience for engineering strategy and project inquiries.
+- **Carbon Mesh Background**: Dynamic, ambient golden lighting that adds depth to the user interface.
+- **Multi-Page Architecture**: Robust routing for Home, About, Portfolio, and Consultation.
+- **Responsive Layout**: Seamless experience across mobile, tablet, and desktop devices.
+- **Custom Assets**: Hand-crafted SVG assets including a signature gold "N" logo.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vite.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Routing**: [React Router 7](https://reactrouter.com/)
+- **Iconography**: [Font Awesome 6](https://fontawesome.com/)
+- **Typography**: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kashif-Khokhar/NexGen-Solutions.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Development
+Run the development server:
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Build
+Build for production:
+```bash
+npm run build
 ```
+
+## 👨‍💻 Author
+**Kashif Khokhar** - Lead Engineer & Strategist
+
+---
+© 2026 NexGen Solutions. All Rights Reserved.
