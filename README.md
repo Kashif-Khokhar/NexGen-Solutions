@@ -1,5 +1,7 @@
 # NexGen Solutions | Enterprise Digital Agency
 
+**Live Demo**: [https://nex-gen-solutions-eight.vercel.app/](https://nex-gen-solutions-eight.vercel.app/)
+
 NexGen Solutions is a premium, high-performance digital agency platform built with modern engineering practices. This project showcases a "Carbon & Gold" aesthetic, utilizing state-of-the-art web technologies to deliver a sophisticated user experience.
 
 ## 🚀 Vision
