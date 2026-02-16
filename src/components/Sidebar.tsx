@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = ({ onCollapse }: { onCollapse: (collapsed: boolean) => void }) => {
     const [isCollapsed, setIsCollapsed] = useState(false);
