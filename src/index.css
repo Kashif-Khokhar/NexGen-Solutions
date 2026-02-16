@@ -1,14 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2563eb;
-  --color-dark: #0f172a;
-  --color-accent: #3b82f6;
+  --color-primary: #facc15;
+  /* Yellow/Gold 400 */
+  --color-dark: #0a0a0a;
+  /* Carbon Black */
+  --color-accent: #f59e0b;
+  /* Amber 500 for slight variation */
+  --color-surface: #171717;
+  /* Neutral 900 */
   --font-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root {
-  --text-light: #64748b;
+  --text-light: #737373;
+  --glass-bg: rgba(23, 23, 23, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.05);
 }
 
 @layer base {
@@ -17,12 +24,23 @@
   }
 
   body {
-    @apply font-jakarta text-dark bg-slate-50 leading-relaxed;
+    @apply font-jakarta text-neutral-200 bg-dark leading-relaxed antialiased;
   }
 }
 
-/* Sidebar Layout Helpers */
-@media (min-width: 768px) {
-  /* This relies on the App.tsx structure and Sidebar transitions.
-     We'll handle the content offset directly in the components for better control. */
+@layer components {
+  .glass {
+    @apply bg-[var(--glass-bg)] backdrop-blur-xl border border-[var(--glass-border)] transition-all duration-300;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(250, 204, 21, 0.3);
+  }
+
+  .bg-mesh {
+    background: radial-gradient(at 0% 0%, rgba(250, 204, 21, 0.12) 0, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(245, 158, 11, 0.1) 0, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(250, 204, 21, 0.12) 0, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(245, 158, 11, 0.1) 0, transparent 50%);
+  }
 }
